@@ -14,34 +14,14 @@ const routes: RouteRecordRaw[] = [
     path: '/fba-admin',
     children: [
       {
-        name: 'Document',
-        path: '/document',
-        component: IFrameView,
-        meta: {
-          icon: 'lucide:book-open-text',
-          link: 'https://fastapi-practices.github.io/fastapi_best_architecture_docs',
-          title: '文档',
-        },
-      },
-      {
-        name: 'Github',
-        path: '/github',
-        component: IFrameView,
-        meta: {
-          icon: 'mdi:github',
-          link: 'https://github.com/fastapi-practices/fastapi_best_architecture',
-          title: 'Github',
-        },
-      },
-      {
-        name: 'Apifox',
+        name: '接口文档',
         path: '/apifox',
         component: IFrameView,
         meta: {
           icon: 'simple-icons:apifox',
           iframeSrc:
             'https://apifox.com/apidoc/shared-28a93f02-730b-4f33-bb5e-4dad92058cc0',
-          title: 'Apifox',
+          title: '接口文档',
         },
       },
     ],

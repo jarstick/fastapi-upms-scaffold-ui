@@ -1,7 +1,7 @@
 {
   "welcomeBack": "欢迎回来",
-  "pageTitle": "开箱即用的大型中后台管理系统",
-  "pageDesc": "工程化、高性能、跨组件库的前端模版",
+  "pageTitle": "测试管理平台",
+  "pageDesc": "让测试工作更高效",
   "loginSuccess": "登录成功",
   "loginSuccessDesc": "欢迎回来",
   "loginSubtitle": "请输入您的帐户信息以开始管理您的项目",
@@ -47,7 +47,7 @@
   "sendText": "{0}秒后重新获取",
   "thirdPartyLogin": "其他登录方式",
   "loginAgainTitle": "重新登录",
-  "loginAgainSubTitle": "您的登录状态已过期，请重新登录以继续。",
+  "loginAgainSubTitle": "您的登录状态已过期，请重新登录",
   "layout": {
     "center": "居中",
     "alignLeft": "居左",

@@ -7,53 +7,53 @@ import { computed, h, onMounted, ref } from 'vue';
 import { AuthenticationLogin, z } from '@vben/common-ui';
 import { $t } from '@vben/locales';
 
-import { Image, notification } from 'ant-design-vue';
+import { Image } from 'ant-design-vue';
 
 import { useAuthStore } from '#/store';
 import OAuth2Login from '#/views/oauth2/login.vue';
 
 defineOptions({ name: 'Login' });
 
-const showNotification = () => {
-  notification.warning({
-    message: h('span', { class: 'font-semibold' }, '公告'),
-    description: h('div', [
-      h('p', { class: 'mb-2' }, [
-        '您正在浏览 ',
-        h(
-          'span',
-          { class: 'font-bold' },
-          '基于 Vben Admin Antd 构建的 fastapi_best_architecture 前端完整版实施',
-        ),
-      ]),
-      h('ul', { class: 'list-disc pl-5 space-y-1' }, [
-        h('li', null, [
-          '此项目目前仍处于 WIP (Work In Progress) 状态',
-          ' ',
-          h(
-            'span',
-            {
-              class:
-                'inline-block px-2 py-0.5 bg-orange-100 text-orange-800 text-xs rounded-full',
-            },
-            '开发阶段',
-          ),
-        ]),
-        h('li', null, [
-          '计划于第二季度结束前完成',
-          h('span', { class: 'text-gray-500 ml-1' }, '（可能延期）'),
-        ]),
-      ]),
-    ]),
-    duration: null,
-    maxCount: 1,
-    placement: 'bottom',
-    class: 'w-full',
-  });
-};
+// const showNotification = () => {
+// notification.warning({
+//  message: h('span', { class: 'font-semibold' }, '公告'),
+//  description: h('div', [
+//    h('p', { class: 'mb-2' }, [
+//      '您正在浏览 ',
+//      h(
+//        'span',
+//        { class: 'font-bold' },
+//        '基于 Vben Admin Antd 构建的 fastapi_best_architecture 前端完整版实施',
+//      ),
+//    ]),
+//    h('ul', { class: 'list-disc pl-5 space-y-1' }, [
+//      h('li', null, [
+//        '此项目目前仍处于 WIP (Work In Progress) 状态',
+//        ' ',
+//        h(
+//          'span',
+//          {
+//            class:
+//              'inline-block px-2 py-0.5 bg-orange-100 text-orange-800 text-xs rounded-full',
+//          },
+//          '开发阶段',
+//        ),
+//      ]),
+//      h('li', null, [
+//        '计划于第二季度结束前完成',
+//        h('span', { class: 'text-gray-500 ml-1' }, '（可能延期）'),
+//      ]),
+//    ]),
+//  ]),
+//  duration: null,
+//  maxCount: 1,
+//  placement: 'bottom',
+//  class: 'w-full',
+// });
+// };
 
 onMounted(() => {
-  showNotification();
+  // showNotification();
 });
 
 const authStore = useAuthStore();

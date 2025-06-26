@@ -39,7 +39,7 @@ const defaultPreferences: Preferences = {
     styleType: 'normal',
   },
   copyright: {
-    companyName: 'Vben',
+    companyName: '效能研发',
     companySiteLink: 'https://www.vben.pro',
     date: '2024',
     enable: true,

@@ -23,12 +23,6 @@ onMounted(() => {
           name: '移动端',
         },
         {
-          name: 'Ipad',
-        },
-        {
-          name: '客户端',
-        },
-        {
           name: '第三方',
         },
         {

@@ -237,7 +237,6 @@ onMounted(() => {
           />
         </div>
         <div class="-mt-3 p-3">
-          <div class="mb-1">XXX集团</div>
           <a-tree
             v-if="treeData.length > 0"
             :show-line="{ showLeafIcon: false }"
